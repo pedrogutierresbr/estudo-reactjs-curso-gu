@@ -3,7 +3,7 @@
 
 ## Criando projeto REACT
 ```
-no terminal (cmd)
+**No terminal (cmd)**
 
 npx create-react-app
 
