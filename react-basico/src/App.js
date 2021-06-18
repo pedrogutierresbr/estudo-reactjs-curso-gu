@@ -18,20 +18,35 @@ class App extends Component {
                 mensagem: "Olá, tudo bem sim ....",
             },
         ],
+        novoComentario: {
+            nome: "",
+            email: "",
+            mensagem: "",
+        },
     };
 
-    adicionarComentario = () => {
+    adicionarComentario = (evento) => {
+        evento.preventDefault();
         console.log("adicionando comentario...");
-
         const novoComentario = {
-            nome: "Joana",
-            email: "joana@joana.com.br",
+            ...this.state.novoComentario,
             data: new Date(),
-            mensagem: "Olá pessoal !!!!!",
         };
 
         this.setState({
             comentarios: [...this.state.comentarios, novoComentario],
+            novoComentario: {
+                nome: "",
+                email: "",
+                mensagem: "",
+            },
+        });
+    };
+
+    digitacao = (evento) => {
+        const { name, value } = evento.target;
+        this.setState({
+            novoComentario: { ...this.state.novoComentario, [name]: value },
         });
     };
 
@@ -51,9 +66,38 @@ class App extends Component {
                     </Comentario>
                 ))}
 
-                <button onClick={this.adicionarComentario}>
-                    Adicionar um comentario
-                </button>
+                <form method="POST" onSubmit={this.adicionarComentario}>
+                    <h2>Adicionar novo comentário</h2>
+                    <div>
+                        <input
+                            type="text"
+                            name="nome"
+                            value={this.state.novoComentario.nome}
+                            onChange={this.digitacao}
+                            placeholder="Digite seu nome"
+                        />
+                    </div>
+                    <div>
+                        <input
+                            type="email"
+                            name="email"
+                            value={this.state.novoComentario.email}
+                            onChange={this.digitacao}
+                            placeholder="Digite seu email"
+                        ></input>
+                    </div>
+                    <div>
+                        <textarea
+                            name="mensagem"
+                            value={this.state.novoComentario.mensagem}
+                            onChange={this.digitacao}
+                            rows="4"
+                        ></textarea>
+                    </div>
+                    <div>
+                        <button type="submit">Adicionar comentário</button>
+                    </div>
+                </form>
             </div>
         );
     }
