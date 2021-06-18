@@ -2,7 +2,9 @@
 
 
 ## Criando projeto REACT
-```Terminal
+```
+no terminal (cmd)
+
 npx create-react-app
 
 npm start
