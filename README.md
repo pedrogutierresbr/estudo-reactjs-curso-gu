@@ -5,6 +5,8 @@
 ```
 **No terminal (cmd)**
 
+cd *pasta de destino* 
+
 npx create-react-app
 
 npm start
