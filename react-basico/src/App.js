@@ -20,6 +20,21 @@ class App extends Component {
         ],
     };
 
+    adicionarComentario = () => {
+        console.log("adicionando comentario...");
+
+        const novoComentario = {
+            nome: "Joana",
+            email: "joana@joana.com.br",
+            data: new Date(),
+            mensagem: "Olá pessoal !!!!!",
+        };
+
+        this.setState({
+            comentarios: [...this.state.comentarios, novoComentario],
+        });
+    };
+
     render() {
         return (
             <div className="App">
@@ -35,6 +50,10 @@ class App extends Component {
                         {comentario.mensagem}
                     </Comentario>
                 ))}
+
+                <button onClick={this.adicionarComentario}>
+                    Adicionar um comentario
+                </button>
             </div>
         );
     }
