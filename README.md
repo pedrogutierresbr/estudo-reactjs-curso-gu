@@ -3,9 +3,9 @@
 
 ## Criando projeto REACT
 ```
-**No terminal (cmd)**
+Terminal
 
-cd *pasta de destino* 
+cd <pasta de destino> 
 
 npx create-react-app
 
