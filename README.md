@@ -24,8 +24,8 @@ yarn add date-fns
 
 ### Códigos de status de respostas HTTP
 
-Respostas de informação (100-199),
-Respostas de sucesso (200-299),
+Respostas de informação (100-199)
+Respostas de sucesso (200-299)
 Redirecionamentos (300-399)
 Erros do cliente (400-499)
-Erros do servidor (500-599).
+Erros do servidor (500-599)
