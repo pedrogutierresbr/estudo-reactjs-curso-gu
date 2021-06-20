@@ -6,7 +6,7 @@ const Fruta = ({ fruta }) => {
     const dispatch = useDispatch();
 
     return (
-        <div className="Fruta">
+        <div className="fruta">
             <ul>
                 <li>
                     <strong>Fruta: </strong> {fruta.nome}
@@ -16,7 +16,7 @@ const Fruta = ({ fruta }) => {
                 </li>
             </ul>
             <button onClick={() => dispatch(actions.remover(fruta))}>
-                Remover
+                &times;
             </button>
         </div>
     );
