@@ -38,3 +38,14 @@ yarn add date-fns
 ### Principais Hooks disponíveis
 - Hooks Básicos
   - useState()
+  - useEffect()
+  - useContext()
+
+- Hooks Adicionais
+  - useReducer()
+  - useCallback()
+  - useMemo()
+  - useRef()
+  - useImperativeHandle()
+  - useLayoutEffect()
+
