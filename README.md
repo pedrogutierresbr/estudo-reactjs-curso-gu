@@ -33,3 +33,8 @@ yarn add date-fns
 - Erros do cliente (400-499)
 
 - Erros do servidor (500-599)
+
+
+### Principais Hooks disponíveis
+- Hooks Básicos
+-- useState()
