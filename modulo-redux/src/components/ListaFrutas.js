@@ -1,12 +1,10 @@
 import React from "react";
+import { useSelector } from "react-redux";
 import AdicionaFruta from "./AdicionaFruta";
 import Fruta from "./frutas";
 
 const ListaFrutas = () => {
-    const frutas = [
-        { id: 1, nome: "Abacaxi", quantidade: 5 },
-        { id: 2, nome: "Maçã", quantidade: 12 },
-    ];
+    const frutas = useSelector((state) => state.frutaReducers.frutas);
 
     return (
         <>
