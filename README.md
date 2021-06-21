@@ -71,7 +71,9 @@ npm install react-router-dom
 documentation: [https://reactrouter.com/web/guides/quick-start]
 
 ## Instalando Redux
+
 The Redux core library is available as a package on NPM for use with a module bundler or in a Node application:
+
 ```
 # NPM
 npm install redux
@@ -82,3 +84,25 @@ yarn add redux
 ```
 
 documentation: [https://redux.js.org/introduction/getting-started]
+
+## Instalando Formik
+
+```
+# NPM
+npm install formik
+
+# Yarn
+yarn add formik
+```
+
+documentation: [https://formik.org/docs/overview]
+
+## Instalando Yup
+
+```
+# NPM
+npm install yup
+
+# Yarn
+yarn add yup
+```
