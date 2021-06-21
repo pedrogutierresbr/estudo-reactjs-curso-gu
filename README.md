@@ -108,3 +108,7 @@ yarn add yup
 ```
 
 documentation: [https://www.npmjs.com/package/yup]
+
+## Para fazer deploy da aplicação
+
+documentation: [https://create-react-app.dev/docs/deployment/]
