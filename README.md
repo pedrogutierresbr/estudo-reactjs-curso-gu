@@ -106,3 +106,5 @@ npm install yup
 # Yarn
 yarn add yup
 ```
+
+documentation: [https://www.npmjs.com/package/yup]
